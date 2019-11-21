@@ -4,4 +4,4 @@ Custom code for the article: <br>
 Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak <br>
 Current Biology
 
-This repository contains different versions of the mathematical model used in the article, in the 'models' folder.<br>
+This repository contains different versions of the mathematical models used in the article (see 'models').<br>
