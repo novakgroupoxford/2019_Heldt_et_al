@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2019-11-21T12:24:35Z -->
+<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2019-11-25T15:47:34Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="27" versionDevel="217" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -198,7 +198,7 @@ A single light-responsive sizer can control multiple-fission cycles in Chlamydom
 Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak
 
 Abstract:
-Proliferating cells need to coordinate cell division and growth to maintain size homeostasis. Thus, most eukaryotic cells execute binary division after each mass doubling. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. We show that this simple ‘sizer-oscillator’ arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell-cycle oscillations after cells are transferred from light to dark conditions, and these predictions are confirmed by single-cell experiments. Collectively, our results provide a new perspective on the concept of a ‘commitment point’ during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.
+Most eukaryotic cells execute binary division after each mass doubling, in order to maintain size homeostasis by coordinating cell growth and division. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple 'sizer-oscillator' arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a 'commitment point' during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.
     </Comment>
     <ListOfCompartments>
       <Compartment key="Compartment_0" name="cell" simulationType="ode" dimensionality="3" addNoise="false">
@@ -1611,9 +1611,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     <ListOfEvents>
       <Event key="Event_0" name="Division" fireAtInitialTime="0" persistentTrigger="0">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Event_0">
     <dcterms:created>
       <rdf:Description>
@@ -1622,7 +1620,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <TriggerExpression>
           &lt;CN=Root,Model=Heldt2019 - Chlamydomonas multiple-fission cycles,Vector=Compartments[cell],Vector=Metabolites[M],Reference=Concentration> &lt;= &lt;CN=Root,Model=Heldt2019 - Chlamydomonas multiple-fission cycles,Vector=Values[CdTh],Reference=Value>
@@ -1672,9 +1669,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Event>
       <Event key="Event_1" name="Dark shift" fireAtInitialTime="0" persistentTrigger="0">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Event_1">
     <dcterms:created>
       <rdf:Description>
@@ -1683,7 +1678,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <TriggerExpression>
           (&lt;CN=Root,Model=Heldt2019 - Chlamydomonas multiple-fission cycles,Reference=Time>-720)%1440 == 0
@@ -1698,9 +1692,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Event>
       <Event key="Event_2" name="Light shift" fireAtInitialTime="0" persistentTrigger="0">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Event_2">
     <dcterms:created>
       <rdf:Description>
@@ -1709,7 +1701,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <TriggerExpression>
           &lt;CN=Root,Model=Heldt2019 - Chlamydomonas multiple-fission cycles,Reference=Time>%1440 == 0
@@ -1732,7 +1723,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#ModelParameterSet_1">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:11Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:25Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2494,7 +2485,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_0">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:09Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:23Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2512,7 +2503,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_4">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:09Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:23Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2530,7 +2521,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_14">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:09Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:23Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2548,7 +2539,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_16">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:09Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:23Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2566,7 +2557,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_34">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:09Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:23Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2584,7 +2575,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_64">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:09Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:23Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2602,7 +2593,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_88">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:11Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:25Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2620,7 +2611,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_90">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:11Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:25Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2638,7 +2629,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_92">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:19:11Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:47:25Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>

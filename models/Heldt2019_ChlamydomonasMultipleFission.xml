@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.27 (Build 217) on 2019-11-21 12:16 with libSBML version 5.18.0. -->
+<!-- Created by COPASI version 4.27 (Build 217) on 2019-11-25 15:47 with libSBML version 5.18.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model metaid="COPASI0" id="Heldt2019___Chlamydomonas_multiple_fission_cycles" name="Heldt2019 - Chlamydomonas multiple-fission cycles">
     <notes>
@@ -9,7 +9,7 @@ A single light-responsive sizer can control multiple-fission cycles in Chlamydom
 Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak
 
 Abstract:
-Proliferating cells need to coordinate cell division and growth to maintain size homeostasis. Thus, most eukaryotic cells execute binary division after each mass doubling. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple &apos;sizer-oscillator&apos; arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a &apos;commitment point&apos; during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.</pre>
+Most eukaryotic cells execute binary division after each mass doubling, in order to maintain size homeostasis by coordinating cell growth and division. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple &apos;sizer-oscillator&apos; arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a &apos;commitment point&apos; during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.</pre>
       </body>
     </notes>
     <annotation>
@@ -66,14 +66,14 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </COPASI>
     </annotation>
     <listOfFunctionDefinitions>
-      <functionDefinition metaid="COPASI62" id="Constant_flux__irreversible" name="Constant flux (irreversible)">
+      <functionDefinition metaid="COPASI62" id="rSyIn" name="rSyIn">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <rdf:Description rdf:about="#COPASI62">
                 <dcterms:created>
                   <rdf:Description>
-                    <dcterms:W3CDTF>2019-09-30T07:21:12Z</dcterms:W3CDTF>
+                    <dcterms:W3CDTF>2019-09-30T14:38:13Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
               </rdf:Description>
@@ -83,68 +83,24 @@ Proliferating cells need to coordinate cell division and growth to maintain size
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <lambda>
             <bvar>
-              <ci> v </ci>
-            </bvar>
-            <ci> v </ci>
-          </lambda>
-        </math>
-      </functionDefinition>
-      <functionDefinition metaid="COPASI63" id="rPhIn" name="rPhIn">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI63">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2019-09-30T15:07:44Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <lambda>
-            <bvar>
-              <ci> kPhInSk </ci>
+              <ci> kSyIn </ci>
             </bvar>
             <bvar>
-              <ci> SK </ci>
-            </bvar>
-            <bvar>
-              <ci> kPhInFk </ci>
-            </bvar>
-            <bvar>
-              <ci> FK </ci>
-            </bvar>
-            <bvar>
-              <ci> Sub </ci>
+              <ci> V </ci>
             </bvar>
             <apply>
-              <times/>
-              <apply>
-                <plus/>
-                <apply>
-                  <times/>
-                  <ci> kPhInSk </ci>
-                  <ci> SK </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <ci> kPhInFk </ci>
-                  <ci> FK </ci>
-                </apply>
-              </apply>
-              <ci> Sub </ci>
+              <divide/>
+              <ci> kSyIn </ci>
+              <ci> V </ci>
             </apply>
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI64" id="rDeSkLi" name="rDeSkLi">
+      <functionDefinition metaid="COPASI63" id="rDeSkLi" name="rDeSkLi">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI64">
+              <rdf:Description rdf:about="#COPASI63">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2019-09-30T13:49:04Z</dcterms:W3CDTF>
@@ -174,11 +130,11 @@ Proliferating cells need to coordinate cell division and growth to maintain size
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI65" id="rSyS" name="rSyS">
+      <functionDefinition metaid="COPASI64" id="rSyS" name="rSyS">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI65">
+              <rdf:Description rdf:about="#COPASI64">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2019-09-30T14:44:33Z</dcterms:W3CDTF>
@@ -234,14 +190,14 @@ Proliferating cells need to coordinate cell division and growth to maintain size
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI66" id="rSyIn" name="rSyIn">
+      <functionDefinition metaid="COPASI65" id="rPhIn" name="rPhIn">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI66">
+              <rdf:Description rdf:about="#COPASI65">
                 <dcterms:created>
                   <rdf:Description>
-                    <dcterms:W3CDTF>2019-09-30T14:38:13Z</dcterms:W3CDTF>
+                    <dcterms:W3CDTF>2019-09-30T15:07:44Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
               </rdf:Description>
@@ -251,16 +207,60 @@ Proliferating cells need to coordinate cell division and growth to maintain size
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <lambda>
             <bvar>
-              <ci> kSyIn </ci>
+              <ci> kPhInSk </ci>
             </bvar>
             <bvar>
-              <ci> V </ci>
+              <ci> SK </ci>
+            </bvar>
+            <bvar>
+              <ci> kPhInFk </ci>
+            </bvar>
+            <bvar>
+              <ci> FK </ci>
+            </bvar>
+            <bvar>
+              <ci> Sub </ci>
             </bvar>
             <apply>
-              <divide/>
-              <ci> kSyIn </ci>
-              <ci> V </ci>
+              <times/>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> kPhInSk </ci>
+                  <ci> SK </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> kPhInFk </ci>
+                  <ci> FK </ci>
+                </apply>
+              </apply>
+              <ci> Sub </ci>
             </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI66" id="Constant_flux__irreversible" name="Constant flux (irreversible)">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI66">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2019-09-30T07:21:12Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> v </ci>
+            </bvar>
+            <ci> v </ci>
           </lambda>
         </math>
       </functionDefinition>
@@ -1137,6 +1137,53 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </parameter>
     </listOfParameters>
     <listOfRules>
+      <assignmentRule variable="TFt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <ci> TF </ci>
+                <ci> cell </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> INTF </ci>
+                <ci> cell </ci>
+              </apply>
+            </apply>
+            <ci> cell </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="INt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <ci> IN </ci>
+                <ci> cell </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> INTF </ci>
+                <ci> cell </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> IP </ci>
+                <ci> cell </ci>
+              </apply>
+            </apply>
+            <ci> cell </ci>
+          </apply>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="A">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -1186,53 +1233,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       <assignmentRule variable="FK">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> TF </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="TFt">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <apply>
-              <plus/>
-              <apply>
-                <divide/>
-                <ci> TF </ci>
-                <ci> cell </ci>
-              </apply>
-              <apply>
-                <divide/>
-                <ci> INTF </ci>
-                <ci> cell </ci>
-              </apply>
-            </apply>
-            <ci> cell </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="INt">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <apply>
-              <plus/>
-              <apply>
-                <divide/>
-                <ci> IN </ci>
-                <ci> cell </ci>
-              </apply>
-              <apply>
-                <divide/>
-                <ci> INTF </ci>
-                <ci> cell </ci>
-              </apply>
-              <apply>
-                <divide/>
-                <ci> IP </ci>
-                <ci> cell </ci>
-              </apply>
-            </apply>
-            <ci> cell </ci>
-          </apply>
         </math>
       </assignmentRule>
       <rateRule variable="cell">

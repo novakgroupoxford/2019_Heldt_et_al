@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2019-11-21T12:15:53Z -->
+<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2019-11-25T15:46:58Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="27" versionDevel="217" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -198,14 +198,12 @@ A single light-responsive sizer can control multiple-fission cycles in Chlamydom
 Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak
 
 Abstract:
-Proliferating cells need to coordinate cell division and growth to maintain size homeostasis. Thus, most eukaryotic cells execute binary division after each mass doubling. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple 'sizer-oscillator' arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a 'commitment point' during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.
+Most eukaryotic cells execute binary division after each mass doubling, in order to maintain size homeostasis by coordinating cell growth and division. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple 'sizer-oscillator' arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a 'commitment point' during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.
     </Comment>
     <ListOfCompartments>
       <Compartment key="Compartment_0" name="cell" simulationType="ode" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_0">
     <dcterms:created>
       <rdf:Description>
@@ -214,7 +212,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV) cell
@@ -227,9 +224,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     <ListOfMetabolites>
       <Metabolite key="Metabolite_0" name="SK" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_0">
     <dcterms:created>
       <rdf:Description>
@@ -238,7 +233,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) starter kinase
@@ -246,9 +240,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_1" name="TF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_1">
     <dcterms:created>
       <rdf:Description>
@@ -257,7 +249,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) free (active) transcription factor
@@ -265,9 +256,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_2" name="IN" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_2">
     <dcterms:created>
       <rdf:Description>
@@ -276,7 +265,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) free inhibitor
@@ -284,9 +272,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_3" name="INTF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_3">
     <dcterms:created>
       <rdf:Description>
@@ -295,7 +281,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) inhibitor-transcription factor complex
@@ -303,9 +288,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_4" name="IP" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_4">
     <dcterms:created>
       <rdf:Description>
@@ -314,7 +297,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) phosphorylated (inactive) inhibitor
@@ -322,9 +304,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_5" name="S" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_5">
     <dcterms:created>
       <rdf:Description>
@@ -333,7 +313,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) S-phase promoting factor
@@ -341,9 +320,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_6" name="M" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_6">
     <dcterms:created>
       <rdf:Description>
@@ -352,7 +329,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) M-phase promoting factor
@@ -360,9 +336,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_7" name="A" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_7">
     <dcterms:created>
       <rdf:Description>
@@ -371,7 +345,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) active antagonist
@@ -382,9 +355,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_8" name="FK" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_8">
     <dcterms:created>
       <rdf:Description>
@@ -393,7 +364,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) feedback kinase
@@ -404,9 +374,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_9" name="TFt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_9">
     <dcterms:created>
       <rdf:Description>
@@ -415,7 +383,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) total transcription factor
@@ -426,9 +393,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </Metabolite>
       <Metabolite key="Metabolite_10" name="INt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_10">
     <dcterms:created>
       <rdf:Description>
@@ -437,7 +402,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) total inhibitor
@@ -450,9 +414,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     <ListOfModelValues>
       <ModelValue key="ModelValue_0" name="Light" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_0">
     <dcterms:created>
       <rdf:Description>
@@ -461,7 +423,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (-) binary variable indicating the presence of light
@@ -472,9 +433,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_1" name="mu" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_1">
     <dcterms:created>
       <rdf:Description>
@@ -483,7 +442,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) specific growth rate (4h mass doubling time)
@@ -494,9 +452,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_2" name="At" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_2">
     <dcterms:created>
       <rdf:Description>
@@ -505,7 +461,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU/AV) total antagonist concentration
@@ -516,9 +471,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_3" name="CdTh" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_3">
     <dcterms:created>
       <rdf:Description>
@@ -527,7 +480,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU/AV) cell division threshold (if M falls below CdTh cell division ensues)
@@ -538,9 +490,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_4" name="kSySk" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_4">
     <dcterms:created>
       <rdf:Description>
@@ -549,7 +499,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU/(AV*min)) starter kinase synthesis
@@ -560,9 +509,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_5" name="kDeSk" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_5">
     <dcterms:created>
       <rdf:Description>
@@ -571,7 +518,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) constitutive starter kinase degradation
@@ -582,9 +528,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_6" name="kDeSkLi" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_6">
     <dcterms:created>
       <rdf:Description>
@@ -593,7 +537,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) light-dependent starter kinase degradation
@@ -604,9 +547,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_7" name="kSyTf" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_7">
     <dcterms:created>
       <rdf:Description>
@@ -615,7 +556,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU/(AV*min)) transcription factor synthesis
@@ -626,9 +566,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_8" name="kDeTf" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_8">
     <dcterms:created>
       <rdf:Description>
@@ -637,7 +575,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) transcription factor degradation
@@ -648,9 +585,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_9" name="kSyIn" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_9">
     <dcterms:created>
       <rdf:Description>
@@ -659,7 +594,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU/min) inhibitor synthesis
@@ -670,9 +604,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_10" name="kDeIn" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_10">
     <dcterms:created>
       <rdf:Description>
@@ -681,7 +613,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) inhibitor degradation
@@ -692,9 +623,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_11" name="kAsTfIn" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_11">
     <dcterms:created>
       <rdf:Description>
@@ -703,7 +632,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV/(AU*min)) association of transcription factor and inhibitor
@@ -714,9 +642,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_12" name="kDsTfIn" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_12">
     <dcterms:created>
       <rdf:Description>
@@ -725,7 +651,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) dissociation of transcription factor-inhibitor complexes
@@ -736,9 +661,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_13" name="kPhInSk" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_13">
     <dcterms:created>
       <rdf:Description>
@@ -747,7 +670,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV/(AU*min)) inhibitor phosphorylation by starter kinase
@@ -758,9 +680,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_14" name="kPhInFk" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_14">
     <dcterms:created>
       <rdf:Description>
@@ -769,7 +689,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV/(AU*min)) inhibitor phosphorylation by feedback kinase
@@ -780,9 +699,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_15" name="kDpIn" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_15">
     <dcterms:created>
       <rdf:Description>
@@ -791,7 +708,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) inhibitor dephosphorylation
@@ -802,9 +718,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_16" name="kSySTf" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_16">
     <dcterms:created>
       <rdf:Description>
@@ -813,7 +727,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) transcription factor-dependent synthesis of S
@@ -824,9 +737,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_17" name="jInSM" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_17">
     <dcterms:created>
       <rdf:Description>
@@ -835,7 +746,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU/AV) half-saturation constant for inhibition of S by M
@@ -846,9 +756,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_18" name="nInSM" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_18">
     <dcterms:created>
       <rdf:Description>
@@ -857,7 +765,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (-) hill exponent for inhibition of S by M
@@ -868,9 +775,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_19" name="kDeS" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_19">
     <dcterms:created>
       <rdf:Description>
@@ -879,7 +784,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) constitutive S degradation
@@ -890,9 +794,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_20" name="kSyMS" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_20">
     <dcterms:created>
       <rdf:Description>
@@ -901,7 +803,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) synthesis of M promoted by S
@@ -912,9 +813,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_21" name="kSyMM" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_21">
     <dcterms:created>
       <rdf:Description>
@@ -923,7 +822,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) synthesis of M promoted by M
@@ -934,9 +832,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_22" name="kDeM" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_22">
     <dcterms:created>
       <rdf:Description>
@@ -945,7 +841,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) constitutive M degradation
@@ -956,9 +851,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_23" name="kDeMA" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_23">
     <dcterms:created>
       <rdf:Description>
@@ -967,7 +860,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV/(AU*min)) antagonist-mediated degradation of M
@@ -978,9 +870,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_24" name="kPhAS" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_24">
     <dcterms:created>
       <rdf:Description>
@@ -989,7 +879,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV^n/(AU^n*min)) phosphorylation of antagonist by S
@@ -1000,9 +889,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_25" name="kPhAM" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_25">
     <dcterms:created>
       <rdf:Description>
@@ -1011,7 +898,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV^n/(AU^n*min)) phosphorylation of antagonist by M
@@ -1022,9 +908,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_26" name="nPhA" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_26">
     <dcterms:created>
       <rdf:Description>
@@ -1033,7 +917,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (-) hill exponent for antagonist phosphorylation
@@ -1044,9 +927,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
       </ModelValue>
       <ModelValue key="ModelValue_27" name="kDpA" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_27">
     <dcterms:created>
       <rdf:Description>
@@ -1055,7 +936,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (1/min) antagonist dephosphorylation
@@ -1731,9 +1611,7 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     <ListOfEvents>
       <Event key="Event_0" name="Division" fireAtInitialTime="0" persistentTrigger="0">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Event_0">
     <dcterms:created>
       <rdf:Description>
@@ -1742,7 +1620,6 @@ Proliferating cells need to coordinate cell division and growth to maintain size
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <TriggerExpression>
           &lt;CN=Root,Model=Heldt2019 - Chlamydomonas multiple-fission cycles,Vector=Compartments[cell],Vector=Metabolites[M],Reference=Concentration> &lt;= &lt;CN=Root,Model=Heldt2019 - Chlamydomonas multiple-fission cycles,Vector=Values[CdTh],Reference=Value>
@@ -1800,7 +1677,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#ModelParameterSet_1">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:06Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:12Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2604,7 +2481,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_0">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:04Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:10Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2622,7 +2499,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_4">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:04Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:10Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2640,7 +2517,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_14">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:04Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:10Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2658,7 +2535,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_16">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:04Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:10Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2676,7 +2553,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_34">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:04Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:10Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2694,7 +2571,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_64">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:04Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:10Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2712,7 +2589,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_88">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:06Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:12Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2730,7 +2607,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_90">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:06Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:12Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -2748,7 +2625,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_92">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2019-11-21T12:12:06Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2019-11-25T15:46:12Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
