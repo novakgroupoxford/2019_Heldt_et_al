@@ -1,5 +1,5 @@
 # 2019_Heldt_et_al
-Custom code for the article: <br>
+Custom code and data for the article: <br>
 "A single light-responsive sizer can control multiple-fission cycles in Chlamydomonas" <br>
 Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak <br>
 Current Biology
